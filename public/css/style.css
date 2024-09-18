@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Couvre toute la largeur */
+    height: 100%; /* Couvre toute la hauteur */
+    object-fit: cover; /* Ajuste l'image sans la déformer */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+h1 {
+    top: 50px;
+    font-size: 3rem;
+}
