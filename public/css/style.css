@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    color: rgb(25, 0, 137);
+    /* color: rgb(25, 0, 137); */
 }
 
 .background-img {
@@ -20,6 +20,9 @@ h1 {
     font-size: 3rem;
 }
 
+nav{
+    color:blue;
+}
 
 footer {
     position: absolute;

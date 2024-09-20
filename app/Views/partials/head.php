@@ -11,20 +11,38 @@
 </head>
 
 
-<body>
-  <nav class="navbar bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light  pb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="public/img/psg_logo-removebg-preview.png" alt="Logo" width="85" class="d-inline-block align-text-top">
-      </a>
+        <a class="navbar-brand mt-2 mt-lg-0 " href="/">
+            <img src="/public/img/Icon.png" alt="Logo" class="imgLogo">
+            Forum
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <?php
+            if(isset($_SESSION['user'])){
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link " href="/logout"><i class="fa-solid fa-circle-plus"></i> Deconnexion</a>
+                </li>
+                <?php
+                if($_SESSION['user']['role']== "Admin"){
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/users"><i class="fa-solid fa-circle-plus"></i> Utilisateurs</a>
+                    </li>
+                    <?php
+                }
+            } else {
+            ?>
+                <li class="nav-item">
+                    <a class="nav-link " href="/register"><i class="fa-solid fa-circle-plus"></i> Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/connection"><i class="fa-solid fa-circle-plus"></i> Connexion</a>
+                </li>
+            <?php
+            }
+            ?>
+        </ul>
     </div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav>
-</body>
-
-</html>
+</nav>
