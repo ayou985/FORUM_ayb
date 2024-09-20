@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-light  pb-3">
     <div class="container-fluid">
         <a class="navbar-brand mt-2 mt-lg-0 " href="/">
-            <img src="/public/img/Icon.png" alt="Logo" class="imgLogo">
+            <img src="/public/./img/./psg_logo-removebg-preview.png" width="75px" alt="Logo" class="imgLogo">
             Forum
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
