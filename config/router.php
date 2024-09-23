@@ -1,7 +1,6 @@
 <?php
-require_once (__DIR__ . "/db.php");
 require_once (__DIR__ . "/function.php");
- 
+require_once (__DIR__ . "/db.php");
 
 // Récupération de l'URI actuelle de la requête utilisateur
 // Cette partie extrait uniquement le chemin de l'URL (sans les paramètres GET ou les fragments)
@@ -17,8 +16,10 @@ $routes = [
     '/connection' => 'ConnectionController.php',
     '/logout' => 'LogoutController.php',
     '/users' => 'UsersController.php',
-    '/profile' => 'userProfileController.php',
-    '/subject' => 'SubjectController.php'
+    '/profile' => 'UserProfileController.php',
+    '/subject' => 'SubjectController.php',
+    '/articles' => 'AllArticlesController.php',
+    '/article' => 'ArticleController.php'
 ];
 
 
